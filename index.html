@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Quiz Fellows</title>
+  </head>
+  <body>
+    <header>
+      <section>
+        <img src="./img/quizfellowslogo.png">
+        <h2>Quiz Fellows</h2>
+
+        <nav>
+          <ul>
+            <li><a href="quiz.html">Quizzes</a></li>
+            <li><a href="gitflashcard.html">Git</a></li>
+            <li><a href="cssflashcard.html">CSS</a></li>
+            <li><a href="htmlflashcard.html">HTML</a></li>
+            <li><a href="jsflashcard.html">JavaScript</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <h1>Please Enter Your Name and Select a Topic</h1>
+      <form id="form">
+        <fieldset>
+          <input type="text" name="user" placeholder="enter your name" required>
+        </fieldset>
+        <fieldset>
+          <select name="topics" size="3">
+            <option value="js">JavaScript</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="git">Git</option>
+          </select>
+        </fieldset>
+        <button  id="submit_button" type="submit">Get Started</button>
+      </form>
+
+    </main>
+
+    <footer id="sticky">Quiz Fellows is brought to you with <span>&hearts;</span> by nzytag.com</footer>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <script src='Chart.bundle.min.js'></script>
+    <title>Quiz Fellows</title>
+  </head>
+  <body>
+    <header>
+      <section>
+        <img src="./img/quizfellowslogo.png">
+        <h2>Quiz Fellows</h2>
+
+        <nav>
+          <ul>
+            <li><a href="quiz.html">Quizzes</a></li>
+            <li><a href="gitflashcard.html">Git</a></li>
+            <li><a href="cssflashcard.html">CSS</a></li>
+            <li><a href="htmlflashcard.html">HTML</a></li>
+            <li><a href="jsflashcard.html">JavaScript</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <form id="quiz">
+        <fieldset class="question">
+          <div class="qheader">1) Javascript is _________ language.</div>
+          <div id="question1" class="qselections">
+            <input type="radio" value="a" name="question1">a) Programming<br>
+            <input type="radio" value="b" name="question1">b) Scripting <br>
+            <input type="radio" value="c" name="question1">c) Application<br>
+            <input type="radio" value="d" name="question1">d) None of these<br>
+          </div>
+        </fieldset>
+
+        <fieldset class="question">
+          <div class="qheader">2) JavaScript is designed for what purpose?</div>
+          <div id="question2" class="qselections">
+            <input type="radio" value="a" name="question2">a) To style HTML pages<br>
+            <input type="radio" value="b" name="question2">b) To add interactivity to HTML pages<br>
+            <input type="radio" value="c" name="question2">c) To perform server side scripting operations<br>
+            <input type="radio" value="d" name="question2">d) To execute query related to databases on servers<br>
+          </div>
+        </fieldset>
+
+        <fieldset class="question">
+          <div class="qheader">3) Which of the following attributes are used to include external JS code inside an HTML document?</div>
+          <div id="question3" class="qselections">
+            <input type="radio" value="a" name="question3">a) link<br>
+            <input type="radio" value="b" name="question3">b) script<br>
+            <input type="radio" value="c" name="question3">c) src<br>
+            <input type="radio" value="d" name="question3">d) ext<br>
+          </div>
+        </fieldset>
+
+        <fieldset class="question">
+          <div class="qheader">4) How do you prompt a user with "Hello World" in an alert box?</div>
+          <div id="question4" class="qselections">
+            <input type="radio" value="a" name="question4">a) alertBox("Hello World");<br>
+            <input type="radio" value="b" name="question4">b) msg("Hello World");<br>
+            <input type="radio" value="c" name="question4">c) alert("Hello World");<br>
+            <input type="radio" value="d" name="question4">d) msgBox("Hello World");<br>
+          </div>
+        </fieldset>
+
+        <fieldset class="question">
+          <div class="qheader">5) JavaScript code is stored in files with the extension __________.</div>
+          <div id="question5" class="qselections">
+            <input type="radio" value="a" name="question5">a) .jvs<br>
+            <input type="radio" value="b" name="question5">b) .javascript<br>
+            <input type="radio" value="c" name="question5">c) .jsc<br>
+            <input type="radio" value="d" name="question5">d) .js<br>
+          </div>
+        </fieldset>
+
+        <div align="center">
+          <input id="button" type="button" value="Grade Me!" name="B1">
+        </div>
+      </form>
+
+      <div id="canvas">
+        <canvas id="chart" width="600" height="600"></canvas>
+      </div>
+    </main>
+
+    <footer id="sticky">Quiz Fellows is brought to you with <span>&hearts;</span> by nzytag.com
+    </footer>
+    <script src="quiz/jsquiz.js"></script>
+  </body>
+</html>

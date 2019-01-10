@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <script src='Chart.bundle.min.js'></script>
+    <title>Quiz Fellows</title>
+  </head>
+  <body>
+    <header>
+      <section>
+        <img src="./img/quizfellowslogo.png">
+        <h2>Quiz Fellows</h2>
+
+        <nav>
+          <ul>
+            <li><a href="quiz.html">Quizzes</a></li>
+            <li><a href="gitflashcard.html">Git</a></li>
+            <li><a href="cssflashcard.html">CSS</a></li>
+            <li><a href="htmlflashcard.html">HTML</a></li>
+            <li><a href="jsflashcard.html">JavaScript</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <form id="quiz">
+        <fieldset class="question">
+          <div class="qheader">1) HTML stands for ________.</div>
+          <div id="question1" class="qselections">
+            <input type="radio" value="a" name="question1">a) Hyper Text Makeup<br>
+            <input type="radio" value="b" name="question1">b) Hyper Tech Markup<br>
+            <input type="radio" value="c" name="question1">c) Hyper Text Markup<br>
+            <input type="radio" value="d" name="question1">d) None of the above<br>
+          </div>
+        </fieldset>
+
+        <fieldset class="question">
+          <div class="qheader">2) HTML documents can contain ________?</div>
+          <div id="question2" class="qselections">
+            <input type="radio" value="a" name="question2">a) Attributes<br>
+            <input type="radio" value="b" name="question2">b) Tags<br>
+            <input type="radio" value="c" name="question2">c) Plain Text<br>
+            <input type="radio" value="d" name="question2">d) All of these<br>
+          </div>
+        </fieldset>
+
+        <fieldset class="question">
+          <div class="qheader">3) Pages designed in HTML are ________?</div>
+          <div id="question3" class="qselections">
+            <input type="radio" value="a" name="question3">a) Front page<br>
+            <input type="radio" value="b" name="question3">b) Web page<br>
+            <input type="radio" value="c" name="question3">c) Yellow page<br>
+            <input type="radio" value="d" name="question3">d) Server page<br>
+          </div>
+        </fieldset>
+
+        <fieldset class="question">
+          <div class="qheader">4) HTML language can be read and rendered by _________.</div>
+          <div id="question4" class="qselections">
+            <input type="radio" value="a" name="question4">a) Compiler<br>
+            <input type="radio" value="b" name="question4">b) Server<br>
+            <input type="radio" value="c" name="question4">c) Web browser<br>
+            <input type="radio" value="d" name="question4">d) Interpreter<br>
+          </div>
+        </fieldset>
+
+        <fieldset class="question">
+          <div class="qheader">5) HTML is considered a(n) ________ language.</div>
+          <div id="question5" class="qselections">
+            <input type="radio" value="a" name="question5">a) Markup language<br>
+            <input type="radio" value="b" name="question5">b) Higher level language<br>
+            <input type="radio" value="c" name="question5">c) OOP language<br>
+            <input type="radio" value="d" name="question5">d) Programming language<br>
+          </div>
+        </fieldset>
+
+        <div align="center">
+          <input id="button" type="button" value="Grade Me!" name="B1">
+        </div>
+      </form>
+
+      <div id="canvas">
+        <canvas id="chart" width="600" height="600"></canvas>
+      </div>
+    </main>
+
+    <footer id="sticky">Quiz Fellows is brought to you with <span>&hearts;</span> by nzytag.com
+    </footer>
+    <script src="quiz/htmlquiz.js"></script>
+  </body>
+</html>

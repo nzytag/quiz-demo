@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Quiz Fellows - JavaScript Study Guide</title>
+  </head>
+  <body>
+    <header>
+      <section>
+        <img src="./img/quizfellowslogo.png">
+        <h2>Quiz Fellows</h2>
+
+        <nav>
+          <ul>
+            <li><a href="quiz.html">Quizzes</a></li>
+            <li><a href="gitflashcard.html">Git</a></li>
+            <li><a href="cssflashcard.html">CSS</a></li>
+            <li><a href="htmlflashcard.html">HTML</a></li>
+            <li><a href="jsflashcard.html">JavaScript</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <div id=greeting>
+        <script src="script/greeting.js"></script>
+      </div>
+      <h1>JavaScript Study Guide</h1>
+      <div class="container">
+        <h2>(Hover over the card to see the answer)</h2>
+
+        <div class="container -column">
+
+          <ul class="left">
+            <li>
+              <div class="card-holder">
+                <div class="card -small -back -flipped">
+                  <img id="top-left-a" src="">
+                </div>
+                <div class="card -small -front -black">
+                  <a class="card--title"><img id="top-left-q" src=""></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-holder">
+                <div class="card -small -back -flipped">
+                  <img id="top-right-a" src="">
+                </div>
+
+                <div class="card -small -front -black">
+                  <a class="card--title"> <img id="top-right-q" src=""></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="right">
+            <li>
+              <div class="card-holder">
+                <div class="card -small -back -flipped">
+                  <img id="bottom-left-a" src="">
+                </div>
+                <div class="card -small -front -black">
+                  <a class="card--title"><img id="bottom-left-q" src=""></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card-holder">
+                <div class="card -small -back -flipped">
+                  <img id="bottom-right-a" src="">
+                </div>
+                <div class="card -front">
+                  <a class="card--title"><img id="bottom-right-q" src=""></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="button">
+        <button id="button" type="button" name="button">More Flashcards</button>
+      </div>
+    </main>
+    <footer id="sticky">Quiz Fellows is brought to you with <span>&hearts;</span> by nzytag.com</footer>
+    <script src="script/jsflashcard.js"></script>
+  </body>
+</html>
